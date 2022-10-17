@@ -72,10 +72,10 @@ public class GoPanel extends JPanel implements MouseListener {
         // graphics.setColor(new Color(0, 0, 0));
         int size = goevolution.n;
         for (int i=0; i<size; i++) {
-            graphics.drawLine(i * getWidth()/(size) + (20), 0, i * getWidth()/(size) + (20), getHeight());
+            graphics.drawLine(i * getWidth()/(size) + (20), 20, i * getWidth()/(size) + (20), getHeight() - 20);
         }
         for (int i=0; i<size; i++) {
-            graphics.drawLine(0, i * getHeight()/(size) + (20), getWidth(), i * getHeight()/(size) + (20));
+            graphics.drawLine(20, i * getHeight()/(size) + (20), getWidth() - 20, i * getHeight()/(size) + (20));
         }
         for (int i=0; i<size; i++) {
             for (int j=0; j<size; j++) {
