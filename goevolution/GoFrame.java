@@ -13,6 +13,7 @@ public class GoFrame extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         // 28 is the offset for the border in the height
         // 760 is a multiple of the n = 19,,,
+        // this is only the case for version 1,,,
         setSize(new Dimension(760, 760 + 28));
         setResizable(false);
         setTitle("Go Evolution");

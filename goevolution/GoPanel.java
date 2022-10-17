@@ -34,7 +34,7 @@ public class GoPanel extends JPanel implements MouseListener {
 
     @Override
     public void mousePressed(MouseEvent e) {
-        //System.out.println("mouse pressed at: " + e.getX() + ", " + e.getY());
+        // System.out.println("mouse pressed at: " + e.getX() + ", " + e.getY());
         int size = goevolution.n;
         int locationX;
         int incrementSize = (int) (getWidth()/(size));
