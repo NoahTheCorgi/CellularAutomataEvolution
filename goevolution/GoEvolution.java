@@ -6,9 +6,9 @@ import java.util.ArrayList;
 
 public class GoEvolution {
 
-    String evolutionType;
-    int n; // size
-    ArrayList<ArrayList<Integer>> board;
+    public String evolutionType;
+    public int n; // size
+    public ArrayList<ArrayList<Integer>> board;
 
     public GoEvolution() {
         evolutionType = "default";
@@ -23,5 +23,9 @@ public class GoEvolution {
             }
             board.add(aRow);
         }
+    }
+
+    public void updateBoard(int x, int y) {
+        board.get(x).set(y, 1);
     }
 }

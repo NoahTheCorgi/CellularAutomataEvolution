@@ -15,6 +15,8 @@ public class GoFrame extends JFrame {
         setTitle("Go Evolution");
         // GoPanel is extending JPanel with mouse listener.
         GoPanel gopanel = new GoPanel();
+        // set background to brown color...
+        gopanel.setBackground(new Color(100, 70, 25));
         gopanel.goevolution = new GoEvolution();
         add(gopanel);
         gopanel.requestFocusInWindow();
