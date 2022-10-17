@@ -52,17 +52,17 @@ public class GoPanel extends JPanel implements MouseListener {
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        //System.out.println("mouse released at: " + e.getX() + ", " + e.getY());
+        System.out.println("mouse released at: " + e.getX() + ", " + e.getY());
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
-        //System.out.println("mouse entered at: " + e.getX() + ", " + e.getY());
+        System.out.println("mouse entered at: " + e.getX() + ", " + e.getY());
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-        //System.out.println("mouse exited at: " + e.getX() + ", " + e.getY());  
+        System.out.println("mouse exited at: " + e.getX() + ", " + e.getY());  
     }
     
     @Override
@@ -84,7 +84,7 @@ public class GoPanel extends JPanel implements MouseListener {
                 Integer locationValue = goevolution.board.get(i).get(j).get(0);
                 if (locationValue != 0) {
                     ArrayList<Integer> aRock = goevolution.board.get(i).get(j);
-                    System.out.println("aRock.get(2):: " + aRock.get(2));
+                    //System.out.println("aRock.get(2):: " + aRock.get(2));
                     graphics.setColor(new Color(aRock.get(1), aRock.get(2), aRock.get(3)));
                     graphics.fillOval((int) (i * Math.ceil(760 / (size))), (int) (j * Math.ceil(760 / (size))), 
                             (int) (760/(size)), (int) (760/(size)));

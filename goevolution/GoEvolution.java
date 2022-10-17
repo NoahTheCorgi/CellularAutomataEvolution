@@ -45,7 +45,6 @@ public class GoEvolution {
         }
         else {
             if (current == -1) {
-                System.out.println("1111111111");
                 board.get(x).get(y).set(0, current); // rock type
                 board.get(x).get(y).set(1, 0); // red
                 board.get(x).get(y).set(2, 0); // green
@@ -53,7 +52,6 @@ public class GoEvolution {
                 current = 1;
             }
             else {
-                System.out.println("222222222222");
                 board.get(x).get(y).set(0, current); // rock type
                 board.get(x).get(y).set(1, 230); // red
                 board.get(x).get(y).set(2, 230); // green
