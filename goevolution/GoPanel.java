@@ -5,9 +5,9 @@ package goevolution;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-import java.awt.image.Raster;
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferByte;
+// import java.awt.image.Raster;
+// import java.awt.image.BufferedImage;
+// import java.awt.image.DataBufferByte;
 import java.lang.Math;
 import java.util.ArrayList;
 
