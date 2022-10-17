@@ -8,6 +8,8 @@ import java.io.IOException;
 
 public class GoFrame extends JFrame {
 
+    public static GoPanel gopanel;
+
     public GoFrame() {
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -18,7 +20,7 @@ public class GoFrame extends JFrame {
         setResizable(false);
         setTitle("Go Evolution");
         // GoPanel is extending JPanel with mouse listener.
-        GoPanel gopanel = new GoPanel();
+        gopanel = new GoPanel();
         // set background to brown color...
         gopanel.setBackground(new Color(100, 70, 25));
         gopanel.goevolution = new GoEvolution();
@@ -28,8 +30,6 @@ public class GoFrame extends JFrame {
 
     public static void main(String[] args) throws IOException {
         GoFrame goframe = new GoFrame();
-        while (true) {
-            goframe.repaint();
-        }
+        goframe.repaint();
     }
 }

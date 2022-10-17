@@ -19,7 +19,7 @@ public class GoPanel extends JPanel implements MouseListener {
 
     public GoEvolution goevolution;
 
-    protected boolean justClicked = false;
+    public boolean justClicked = false;
 
     public Color currentColor = Color.black;
 
@@ -29,12 +29,12 @@ public class GoPanel extends JPanel implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        System.out.println("mouse clicked at: " + e.getX() + ", " + e.getY());
+        // System.out.println("mouse clicked at: " + e.getX() + ", " + e.getY());
     }
 
     @Override
     public void mousePressed(MouseEvent e) {
-        // System.out.println("mouse pressed at: " + e.getX() + ", " + e.getY());
+        System.out.println("mouse pressed at: " + e.getX() + ", " + e.getY());
         int size = goevolution.n;
         int locationX;
         int incrementSize = (int) (getWidth()/(size));
@@ -48,21 +48,23 @@ public class GoPanel extends JPanel implements MouseListener {
         locationY = (int) (pixelMainAmount + Math.round(pixelRemainder/incrementSize));
         goevolution.updateBoard(locationX, locationY);
         justClicked = true;
+        System.out.println(justClicked);
+        repaint();
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        System.out.println("mouse released at: " + e.getX() + ", " + e.getY());
+        // System.out.println("mouse released at: " + e.getX() + ", " + e.getY());
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
-        System.out.println("mouse entered at: " + e.getX() + ", " + e.getY());
+        // System.out.println("mouse entered at: " + e.getX() + ", " + e.getY());
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-        System.out.println("mouse exited at: " + e.getX() + ", " + e.getY());  
+        // System.out.println("mouse exited at: " + e.getX() + ", " + e.getY());  
     }
     
     @Override
