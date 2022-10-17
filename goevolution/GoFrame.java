@@ -11,7 +11,9 @@ public class GoFrame extends JFrame {
     public GoFrame() {
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(new Dimension(1000, 1000));
+        // 28 is the offset for the border in the height
+        // 760 is a multiple of the n = 19,,,
+        setSize(new Dimension(760, 760 + 28));
         setTitle("Go Evolution");
         // GoPanel is extending JPanel with mouse listener.
         GoPanel gopanel = new GoPanel();
