@@ -35,21 +35,31 @@ public class GoEvolution {
     }
 
     public void updateBoard(int x, int y) {
-        if (current == -1) {
-            System.out.println("1111111111");
-            board.get(x).get(y).set(0, current); // rock type
-            board.get(x).get(y).set(1, 0); // red
-            board.get(x).get(y).set(2, 0); // green
-            board.get(x).get(y).set(3, 0); // blue
-            current = 1;
+        if (board.get(x).get(y).get(0) != 0) {
+            // if it is a non-empty location...
+            // empty the location
+            board.get(x).get(y).set(0, 0);
+            board.get(x).get(y).set(1, 0);
+            board.get(x).get(y).set(2, 0);
+            board.get(x).get(y).set(3, 0);
         }
         else {
-            System.out.println("222222222222");
-            board.get(x).get(y).set(0, current); // rock type
-            board.get(x).get(y).set(1, 230); // red
-            board.get(x).get(y).set(2, 230); // green
-            board.get(x).get(y).set(3, 230); // blue
-            current = -1;
+            if (current == -1) {
+                System.out.println("1111111111");
+                board.get(x).get(y).set(0, current); // rock type
+                board.get(x).get(y).set(1, 0); // red
+                board.get(x).get(y).set(2, 0); // green
+                board.get(x).get(y).set(3, 0); // blue
+                current = 1;
+            }
+            else {
+                System.out.println("222222222222");
+                board.get(x).get(y).set(0, current); // rock type
+                board.get(x).get(y).set(1, 230); // red
+                board.get(x).get(y).set(2, 230); // green
+                board.get(x).get(y).set(3, 230); // blue
+                current = -1;
+            }
         }
     }
 }
