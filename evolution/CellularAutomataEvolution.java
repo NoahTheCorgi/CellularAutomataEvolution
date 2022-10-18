@@ -15,7 +15,7 @@ public class CellularAutomataEvolution extends JFrame {
     public CellularAutomataEvolution() {
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        // Future Task #1: dynamically create size with perfect integer division::
+        // (Completed) Task #1: dynamically create size with perfect integer division::
         // 28 is the offset for the border in the height
         setSize(new Dimension(n*40, n*40 + 28));
         setResizable(false);
