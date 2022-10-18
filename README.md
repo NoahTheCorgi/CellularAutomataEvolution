@@ -1,12 +1,13 @@
-# Go / Baduk Board Game Evolved (Optional) ...
+# Experimentations of CellularAutomata with each Cell being Unique ...
 
-From the parent directory of goevolution, please use the following commands:
-javac goevolution/GoFrame.java
-java goevolution/GoFrame
+- Key Idea: Unlike classicial cellular automations, cells can be different from each other
 
-Click locations on the board to play.
-Click on existing rock to remove the rock.
-To switch current rock color, simply click once, remove by clicking again
-, ... and then click again and the opposite color will be played instead.
+, ... each with different properties or behaviors ...
 
-This is version 0.0.1.
+From the parent directory of evolution, please use the following commands:
+
+javac evolution/CellularAutomataEvolution.java
+
+java evolution/CellularAutomataEvolution
+
+This is version 0.1.1
