@@ -86,11 +86,22 @@ public class EvolutionPanel extends JPanel implements MouseListener {
             for (int j=0; j<size; j++) {
                 // i is the row number corresponding to the vertical
                 // j is the horizontal,, the column number...
-                Integer locationValue = theGrid.board.get(i).get(j).get(0);
-                if (locationValue != 0) {
-                    ArrayList<Integer> aCell = theGrid.board.get(i).get(j);
+
+                Cell aCell = theGrid.board.get(i).get(j);
+
+                // Integer locationValue = theGrid.board.get(i).get(j).get(0);
+                
+                if (aCell.celltype != 0) {
+                //if (locationValue != 0) {
+                    
+                    // ArrayList<Integer> aCell = theGrid.board.get(i).get(j);
+
+                    
                     //System.out.println("aCell.get(2):: " + aCell.get(2));
-                    graphics.setColor(new Color(aCell.get(1), aCell.get(2), aCell.get(3)));
+                    // graphics.setColor(new Color(aCell.get(1), aCell.get(2), aCell.get(3)));
+
+                    graphics.setColor(aCell.color);
+
                     graphics.fillRect((int) (i * Math.ceil(40*n / (size))), (int) (j * Math.ceil(40*n / (size))), 
                             (int) (40*n/(size)), (int) (40*n/(size)));
                 }
